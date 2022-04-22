@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
+* {
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Lato', sans-serif;
+    background: rgb(230, 230, 230);
+}
+
+.error {
+    color: rgb(95, 95, 95);
+    font-size: 100px;
+}
+.line {
+    color: black;
+    margin-top: -79px;
+}
+.pagenot {
+    color: rgb(95, 95, 95);
+}
+.contactme {
+    color: black;
+}
+.description {
+    font-size: 20px;
+    letter-spacing: 4px;
+}

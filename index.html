@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>phpadmin.gq - Page not found</title>
+</head>
+<body>
+    <h1 class="error">404</h1>
+    <div class="line">
+        ______________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________________
+    </div>
+    <h2 class="pagenot">Page not found</h2>
+    <p class="description">The page has not found. <br> You probably enter the wrong web adress <br> if not then contact creator of these pages phpadmin.gq <br> on <b class="contactme">phpadmin.gq/contactme</b></p>
+    <script>
+        function getParameterByName(type, url = window.location.href) {
+    type = type.replace(/[\[\]]/g, '\\$&');
+    var regex = new RegExp('[?&]' + type + '(=([^&#]*)|&|#|$)'),
+        results = regex.exec(url);
+    if (!results) return null;
+    if (!results[2]) return '';
+    return decodeURIComponent(results[2].replace(/\+/g, ' '));
+    }
+    document.querySelector(".error").innerHTML = getParameterByName("type");
+    </script>
+    
+</body>
+</html>
